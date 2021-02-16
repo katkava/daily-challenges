@@ -93,3 +93,68 @@ var replaceDots = function(str) {
 function repeatStr (n, s) {
   return s.repeat(n);
 }
+
+//14 convert a number to a string
+
+function numberToString(num) {
+  // Return a string of the number here!
+  return num.toString()
+}
+
+//15 return negative 
+function makeNegative(num) {
+  return -Math.abs(num)
+  }
+
+  //16  convert boolean values to strings "yes" or 'no"
+
+  function boolToWord( bool ){
+ if (bool == true) {
+return "Yes"
+ }else{
+return "No"
+ }
+}
+
+// 17 find the smallest integer in the array
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+     return Math.min(...args)
+  }
+}
+
+//18 square(n) sum 
+function squareSum(numbers){
+ //1st square the numbers in the array
+  //next I will return the output 
+//  let sum = numbers.reduce((acc, c) => Math.sqrt(acc), 0)
+//  return sum
+ return numbers.reduce((sum, num) => sum + (num*num), 0)
+  }
+
+ // 19 needle in a haystack 
+ function findNeedle(haystack) {
+  return `found the needle at position ${haystack.indexOf("needle")}`
+}
+
+// 20 convert a number to reverse array of digits
+
+function digitize(n) {
+  let arr =  n.toString()
+  let splitFirst = arr.split("")
+  let reverseArr = splitFirst.reverse()
+  let arrayOfNums = reverseArr.map(Number)
+  return arrayOfNums
+   
+}
+
+//21 abbreviate a two word name
+function abbrevName(name){
+  let initials = name.split(" ")
+  
+  let firstName = initials[0].split("")
+  let secondName = initials[1].split("")
+  return `${firstName[0].toUpperCase()}.${secondName[0].toUpperCase()}`
+
+}
+
