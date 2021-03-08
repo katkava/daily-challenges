@@ -14,6 +14,7 @@ function uefaEuro2016(teams, scores){
     }
 
 }
+<<<<<<< HEAD
 
 //2 Pre-FizzBuzz Workout #1
 function preFizz(n) {
@@ -24,3 +25,5 @@ for (let i = 1; i <= n; i++){
   return array
 }
 
+=======
+>>>>>>> 89d2b073b36e9e0dc4b1966cbfbfe0511f80ffb5
